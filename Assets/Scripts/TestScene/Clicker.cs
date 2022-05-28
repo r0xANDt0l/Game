@@ -16,9 +16,7 @@ public class Clicker : MonoBehaviour
 
     public void OnButtonPressed()
     {
-        _clickCount++;
-        print(_clickCount);
-        _ClickFinal = _clickCount * _multiplier;
+        _ClickFinal+=_multiplier;
         print(_ClickFinal);
         _ClickAmt.text = _ClickFinal.ToString();
     }
