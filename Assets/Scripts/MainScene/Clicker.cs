@@ -16,8 +16,13 @@ public class Clicker : MonoBehaviour
 
     public void OnButtonPressed()
     {
-        _ClickFinal+=_multiplier;
+        _ClickFinal += _multiplier;
         print(_ClickFinal);
         _ClickAmt.text = _ClickFinal.ToString();
+    }
+
+    public void UpgradeButton()
+    {
+        _multiplier += 1;
     }
 }
