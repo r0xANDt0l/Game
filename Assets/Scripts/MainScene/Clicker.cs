@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Clicker : MonoBehaviour
@@ -24,5 +25,9 @@ public class Clicker : MonoBehaviour
     public void UpgradeButton()
     {
         _multiplier += 1;
+    }
+    public void ShopButton(string level)
+    {
+        SceneManager.LoadScene(level);
     }
 }
